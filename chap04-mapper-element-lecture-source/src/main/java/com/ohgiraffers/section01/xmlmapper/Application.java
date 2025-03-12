@@ -7,14 +7,14 @@ public class Application {
         Scanner sc = new Scanner(System.in);
         ElementService es = new ElementService();
 
-        do{
+        do {
             System.out.println("======= <resultMap> 테스트 메뉴 =======");
             System.out.println("1. <resultMap> 테스트");
-            System.out.println("2. <association> 테스트");
+            System.out.println("2. <associtation> 테스트");
             System.out.println("3. <collection> 테스트");
-            System.out.println("메뉴 번호를 입력하세요 : ");
+            System.out.print("메뉴 번호를 입력하세요: ");
             int no = sc.nextInt();
-            switch (no){
+            switch(no) {
                 case 1:
                     es.selectResultMapTest();
                     break;
@@ -22,8 +22,8 @@ public class Application {
                     es.selectResultMapAssociationTest();
                     break;
                 case 3:
+                    es.selectResultMapCollectionTest();
                     break;
-
             }
         } while(true);
     }

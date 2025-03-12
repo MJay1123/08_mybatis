@@ -5,13 +5,13 @@ public class CategoryDTO {
     private String categoryName;
     private Integer refCategoryCode;
 
-    public CategoryDTO(int categoryCode, String categoryname, Integer refCategoryCode) {
-        this.categoryCode = categoryCode;
-        this.categoryName = categoryname;
-        this.refCategoryCode = refCategoryCode;
+    public CategoryDTO() {
     }
 
-    public CategoryDTO() {
+    public CategoryDTO(int categoryCode, String categoryName, Integer refCategoryCode) {
+        this.categoryCode = categoryCode;
+        this.categoryName = categoryName;
+        this.refCategoryCode = refCategoryCode;
     }
 
     public int getCategoryCode() {
@@ -22,12 +22,12 @@ public class CategoryDTO {
         this.categoryCode = categoryCode;
     }
 
-    public String getCategoryname() {
+    public String getCategoryName() {
         return categoryName;
     }
 
-    public void setCategoryname(String categoryname) {
-        this.categoryName = categoryname;
+    public void setCategoryName(String categoryName) {
+        this.categoryName = categoryName;
     }
 
     public Integer getRefCategoryCode() {

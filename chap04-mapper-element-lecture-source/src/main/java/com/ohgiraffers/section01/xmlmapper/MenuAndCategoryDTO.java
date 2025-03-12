@@ -3,7 +3,7 @@ package com.ohgiraffers.section01.xmlmapper;
 public class MenuAndCategoryDTO {
     private int menuCode;
     private String menuName;
-    private int  menuPrice;
+    private int menuPrice;
     private CategoryDTO category;
     private String orderableStatus;
 
